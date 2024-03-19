@@ -1,0 +1,532 @@
+/* Define custom font */
+@font-face {
+  font-family: 'Eculid Circular'; /* Font name */
+  src: url('Resources/Fonts/Euclid Circular A Regular.ttf') format('truetype'); /* Font source */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Body styles */
+body {
+  font-family: 'Eculid Circular', sans-serif; /* Apply custom font */
+  background-color: #000000; /* Set background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+/* HTML styles */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Reset default padding and box-sizing for all elements */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  position: fixed; /* Fix header at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 999; /* Ensure header is on top of other content */
+  backdrop-filter: blur(10px); /* Add blur effect to background */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+/* Footer styles */
+footer {
+  background: linear-gradient(to right, #000000, #000000); /* Gradient background */
+  color: #fff; /* Text color */
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 1rem 0; /* Padding */
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
+
+/* Remove default list styles */
+li {
+  list-style: none;
+}
+
+/* Link styles */
+a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Navbar styles */
+.navbar {
+  min-height: 70px; /* Minimum height of the navbar */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 24px; /* Padding */
+  position: fixed; /* Fixed position */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  width: 100%; /* Full width */
+  z-index: 999; /* Higher z-index */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+/* Navbar styles */
+.navbar {
+  min-height: 80px; /* Minimum height of the navbar */
+  display: flex; /* Flex layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  padding: 0 24px; /* Padding */
+  position: fixed; /* Fixed position */
+  top: 0; /* Positioned at the top */
+  left: 0; /* Positioned at the left */
+  width: 100%; /* Full width */
+  z-index: 999; /* Higher z-index */
+  backdrop-filter: blur(10px); /* Add blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+}
+
+/* Navbar branding styles */
+.nav-branding {
+  display: flex; /* Flex layout */
+  align-items: center; /* Center items vertically */
+  font-size: 2rem; /* Font size */
+  font-weight: bold; /* Bold font */
+  text-decoration: none; /* No text decoration */
+  color: white; /* Text color */
+}
+
+/* Navbar logo styles */
+.nav-branding img {
+  width: 40px; /* Image width */
+  height: auto; /* Auto height */
+  margin-right: 10px; /* Margin */
+}
+
+/* Navbar links container */
+.nav-menu {
+  display: flex; /* Flex layout */
+  gap: 40px; /* Gap between items */
+}
+
+/* Navbar links styles */
+.nav-item {
+  list-style: none; /* Remove list styles */
+}
+
+.nav-link {
+  color: #ffffff; /* Text color */
+  text-decoration: none; /* No text decoration */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold font */
+  transition: all 0.3s ease; /* Transition effect */
+}
+
+/* Navbar link hover styles */
+.nav-link:hover {
+  background-color: #ffffff00; /* Transparent background on hover */
+  color: #006eff; /* Text color on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none; /* Hide by default */
+}
+
+/* Hamburger bar styles */
+.bar {
+  display: block; /* Display as block */
+  width: 25px; /* Width */
+  height: 3px; /* Height */
+  margin: 5px auto; /* Margin */
+  -webkit-transition: all 0.3s ease-in-out; /* Transition for WebKit browsers */
+  transition: all 0.3s ease-in-out; /* Transition */
+  background-color: white; /* Background color */
+}
+
+
+/* Main styles */
+main {
+  color: #fff; /* Text color */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 1.5rem; /* Padding */
+  font-size: 18px; /* Font size */
+  margin: 2rem auto; /* Margin */
+  max-width: 1300px; /* Maximum width */
+  margin-top: 70px; /* Adjusted margin top to account for fixed header */
+  transition: margin 0.3s; /* Transition effect for margin */
+}
+
+/* Main content push for fixed header */
+.main-content-push {
+  margin-top: 450px; /* Adjusted margin top for fixed header */
+  position: fixed; /* Fix position */
+  width: 100%; /* Full width */
+  top: 0; /* Top position */
+  left: 0; /* Left position */
+}
+
+/* Video container styles */
+.video-container {
+  position: relative; /* Relative position */
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Video styles */
+video {
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
+  display: block; /* Display as block */
+}
+
+/* Welcome text styles */
+.welcome-text {
+  position: absolute; /* Absolute position */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center text */
+  text-align: center; /* Center text */
+  color: #fff; /* Text color */
+  z-index: 1; /* Higher z-index */
+  font-size: 2.5rem; /* Font size */
+}
+
+/* Welcome text styles for mobile */
+.welcome-text-mobile {
+  display: none; /* Hide by default */
+}
+
+/* Feature section styles */
+.features {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap items */
+  justify-content: center; /* Center items horizontally */
+  margin: 50px auto; /* Margin */
+}
+
+/* Individual feature styles */
+.feature {
+  width: 30%; /* Set width */
+  margin: 20px; /* Margin */
+  padding: 20px; /* Padding */
+  box-sizing: border-box; /* Border box sizing */
+  text-align: center; /* Center text */
+  background-color: #222; /* Background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+/* Hover styles for features */
+.feature:hover {
+  transform: translateY(-5px); /* Move up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Box shadow on hover */
+}
+
+/* Image styles within features */
+.feature img {
+  width: 80px; /* Image width */
+  height: 80px; /* Image height */
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Display as block */
+}
+
+/* Heading and paragraph styles within features */
+.feature h3,
+.feature h4 {
+  margin: 10px 0; /* Margin */
+  font-size: 20px; /* Font size */
+}
+
+.feature p {
+  margin: 10px 0; /* Margin */
+  font-size: 14px; /* Font size */
+  color: #8b8b8b; /* Text color */
+}
+
+/* Portfolio section styles */
+.portfolio {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 50px auto; /* Margin */
+}
+
+/* Individual website styles */
+.websites {
+  width: 30%; /* Set width */
+  margin: 20px; /* Margin */
+  padding: 20px; /* Padding */
+  box-sizing: border-box; /* Border box sizing */
+  text-align: center; /* Center text */
+  transition: transform 0.3s; /* Transition effect */
+}
+
+/* Hover styles for websites */
+.websites:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Image styles within websites */
+.websites img {
+  width: 300px; /* Image width */
+  height: auto; /* Auto height */
+  margin: 0 auto; /* Center horizontally */
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap items */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Heading styles within websites */
+.websites h4 {
+  margin: 10px 0; /* Margin */
+  font-size: 20px; /* Font size */
+}
+
+/* Paragraph styles within websites */
+.websites p {
+  margin: 10px 0; /* Margin */
+  font-size: 17px; /* Font size */
+}
+
+/* Skills section styles */
+.skills {
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Wrap items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 10px auto; /* Margin */
+}
+
+/* Individual skill styles */
+.skill {
+  width: 10%; /* Set width */
+  margin: 15px; /* Margin */
+  padding: 10px; /* Padding */
+  box-sizing: border-box; /* Border box sizing */
+  text-align: center; /* Center text */
+  transition: transform 0.3s; /* Transition effect */
+}
+
+/* Object styles within skills */
+.skill object {
+  width: 50px; /* Object width */
+  height: auto; /* Auto height */
+  margin: 0 auto; /* Center horizontally */
+  display: block; /* Display as block */
+  transition: transform 0.3s; /* Transition effect */
+}
+
+/* Hover styles for skills */
+.skill object:hover {
+  opacity: 0.8; /* Opacity on hover */
+}
+
+/* Testimonials section styles */
+.testimonials {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+  margin: 50px auto; /* Margin */
+}
+
+/* Individual testimonial styles */
+.testimonial {
+  width: 80%; /* Set width */
+  margin: 20px 0; /* Margin */
+  padding: 20px; /* Padding */
+  box-sizing: border-box; /* Border box sizing */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #333; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow */
+  text-align: left; /* Left-aligned text */
+  position: relative; /* Relative position */
+  display: flex; /* Flex layout */
+  align-items: flex-start; /* Align items at the start */
+}
+
+/* Alternating testimonial positions */
+.testimonial:nth-child(odd) {
+  align-self: flex-start; /* Align to the start */
+}
+
+.testimonial:nth-child(even) {
+  align-self: flex-end; /* Align to the end */
+}
+
+/* Testimonial text styles */
+.testimonial-text {
+  font-style: italic; /* Italic font */
+  margin-bottom: 10px; /* Margin */
+  flex: 1; /* Flexible width */
+}
+
+/* Testimonial author styles */
+.testimonial-author {
+  font-weight: bold; /* Bold font */
+  margin-left: 10px; /* Margin */
+}
+
+/* Profile picture styles */
+.profile-picture {
+  width: 60px; /* Image width */
+  height: 60px; /* Image height */
+  border-radius: 50%; /* Circular border radius */
+  background-color: #ccc; /* Background color */
+  margin-right: 20px; /* Margin */
+  flex-shrink: 0; /* Prevent shrinking */
+  overflow: hidden; /* Hide overflow */
+}
+
+/* Profile picture image styles */
+.profile-picture img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the container */
+  border-radius: 50%; /* Circular border radius */
+}
+
+/* Testimonial triangle styles */
+.testimonial:before {
+  content: ""; /* Empty content */
+  position: absolute; /* Absolute position */
+  top: -10px; /* Position above testimonial */
+  left: 20px; /* Position from the left */
+  width: 0; /* Zero width */
+  height: 0; /* Zero height */
+  border-left: 10px solid transparent; /* Left border */
+  border-right: 10px solid transparent; /* Right border */
+  border-bottom: 10px solid #333; /* Bottom border */
+}
+
+/* Alternating testimonial triangle positions */
+.testimonial:nth-child(even):before {
+  left: auto; /* Reset left position */
+  right: 20px; /* Position from the right */
+}
+
+/* Media query for smaller screens */
+@media(max-width: 768px) {
+  /* Hamburger menu styles */
+  .hamburger {
+    display: block; /* Display as block */
+  }
+
+  /* Active hamburger menu bar styles */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg); /* Rotate top bar */
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg); /* Rotate bottom bar */
+  }
+
+  /* Navbar menu styles */
+  .nav-menu {
+    position: absolute; /* Absolute position */
+    left: -100%; /* Move off-screen */
+    top: 70px; /* Position below navbar */
+    gap: 0; /* No gap between items */
+    flex-direction: column; /* Column layout */
+    backdrop-filter: blur(10px); /* Add blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    width: 100%; /* Full width */
+    margin: 0; /* No margin */
+    text-align: center; /* Center text */
+    transition: 0.3s; /* Transition effect */
+  }
+
+  /* Navbar item styles */
+  .nav-item {
+    margin: 16px 0; /* Margin */
+  }
+
+  /* Show navbar menu when active */
+  .nav-menu.active {
+    left: 0; /* Move onto screen */
+  }
+
+  /* Heading styles */
+  h1 {
+    width: 90%; /* Set width */
+  }
+
+  /* Adjust feature width for smaller screens */
+  .feature {
+    width: 100%; /* Full width */
+  }
+
+  /* Adjust website width for smaller screens */
+  .websites {
+    width: 100%; /* Full width */
+    margin: 20px; /* Margin */
+    padding: 5px; /* Padding */
+    overflow: hidden; /* Hide overflow */
+  }
+
+  /* Adjust skill width for smaller screens */
+  .skill {
+    width: 20%; /* Set width */
+    margin: 20px; /* Margin */
+    padding: 10px; /* Padding */
+  }
+
+  /* Hide video container in mobile view */
+  .video-container {
+    display: none; /* Hide */
+  }
+
+  /* Welcome text styles for mobile */
+  .welcome-text-mobile {
+    font-size: 14px; /* Font size */
+    position: absolute; /* Absolute position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    text-align: center; /* Center text */
+    color: #fff; /* Text color */
+    z-index: 1; /* Higher z-index */
+  }
+
+  /* Testimonial styles for smaller screens */
+  .testimonial {
+    width: 90%; /* Set width */
+    align-self: center; /* Align to center */
+    flex-direction: column; /* Column layout */
+    align-items: flex-start; /* Align items at the start */
+  }
+
+  /* Reset testimonial alignment for odd/even */
+  .testimonial:nth-child(odd),
+  .testimonial:nth-child(even) {
+    align-self: center; /* Align to center */
+  }
+
+  /* Adjust profile picture size for smaller screens */
+  .profile-picture {
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+    margin-right: 0; /* Reset margin */
+    margin-bottom: 10px; /* Margin bottom */
+  }
+}
