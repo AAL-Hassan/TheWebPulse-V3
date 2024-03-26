@@ -13,22 +13,12 @@
     <!-- Swiper CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $('.nav-link').click(function(){
-          $('.nav-link').removeClass('active');
-          $(this).addClass('active');
-        });
-      });
-      </script>
   </head>
   <body>
-    <header>
+    <header class="fixed-top bg-dark">
       <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark">
-          <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+          <div class="container-fluid">
             <a class="navbar-brand nav-branding" href="updatedIndex.html">
               <img src="Resources/Images/WebPulse Logo/WebPulse Logo 2.png" alt="WebPulse Logo"> WebPulse </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,19 +27,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#BannerVideo">Home</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#serviceSection">Services</a>
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portfolioSection">Portfolio</a>
+                  <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Testimonial">Testimonial</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contactSection">Contact Us</a>
+                  <a class="nav-link" href="#contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -81,7 +68,7 @@
         </div>
       </div>
     </section>
-    <section class="serviceSection" id="serviceSection">
+    <section class="serviceSection" id="services">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -176,68 +163,86 @@
         <!-- .slider // -->
       </div>
     </section>
-    <section class="portfolioSection" id="portfolioSection">
+    <section class="portfolioSection" id="portfolio">
       <div class="container">
         <div class="row">
           <h3>Previous Work</h3>
         </div>
         <div class="row web1">
           <div class="col-md-6 colSpacing">
-            <h4>Website 1</h4>
+            <a href="#"><h4>Website 1</h4></a>
+            <div class="col-md-6 webmobileimage">
+            <img src="Resources\Images\Recent Work (Websites)\Florahosptality.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources\Images\Recent Work (Websites)\Florahosptality.png" alt="image1">
           </div>
         </div>
         <div class="row web1">
-          <div class="col-md-6 ">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources\Images\Recent Work (Websites)\Freal%20Straight.png" alt="image1">
           </div>
           <div class="col-md-6 colSpacing">
-            <h4>Website 2 </h4>
+            <a href="#"><h4>Website 2 </h4></a>
+            <div class="col-md-6 webmobileimage">
+            <img src="Resources\Images\Recent Work (Websites)\Freal%20Straight.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
         </div>
         <div class="row web1">
           <div class="col-md-6 colSpacing">
-            <h4>Website 3</h4>
+            <a href="#"><h4>Website 3</h4></a>
+            <div class="col-md-6 webmobileimage">
+            <img src="Resources/Images/Recent%20Work%20(Websites)/Custom%20Disposables.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources/Images/Recent%20Work%20(Websites)/Custom%20Disposables.png" alt="image1">
           </div>
         </div>
         <div class="row web1">
-          <div class="col-md-6 ">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources/Images/Recent%20Work%20(Websites)/Jernbro.png" alt="image1">
           </div>
           <div class="col-md-6 colSpacing">
-            <h4>Website 4 </h4>
+            <a href="#"><h4>Website 4 </h4></a>
+            <div class="col-md-6 webmobileimage">
+            <img src="Resources/Images/Recent%20Work%20(Websites)/Jernbro.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
         </div>
         <div class="row web1">
           <div class="col-md-6 colSpacing">
-            <h4>Website 5</h4>
+            <a href="#"><h4>Website 5</h4></a>
+             <div class="col-md-6 webmobileimage">
+            <img src="Resources/Images/Recent%20Work%20(Websites)/Kaddy.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources/Images/Recent%20Work%20(Websites)/Kaddy.png" alt="image1">
           </div>
         </div>
         <div class="row web1">
-          <div class="col-md-6 ">
+          <div class="col-md-6 webdesktopimage">
             <img src="Resources/Images/Recent%20Work%20(Websites)/Vida.png" alt="image1">
           </div>
           <div class="col-md-6 colSpacing">
-            <h4>Website 6 </h4>
+            <a href="#"><h4>Website 6 </h4></a>
+            <div class="col-md-6 webmobileimage">
+            <img src="Resources/Images/Recent%20Work%20(Websites)/Vida.png" alt="image1">
+          </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="testimonialSection" id="Testimonial">
+    <section class="testimonialSection">
       <div class="container py-3">
         <div class="row">
           <h3>Testimonials</h3>
@@ -444,7 +449,7 @@
                 <div style="margin-top: 20px;" class="col-md-3">
                   <div class="card dual">
                    <div class="header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" style="padding-top: 10px;margin-left: 5px;" viewBox="0 0 256 256" preserveAspectRatio="xMinYMin meet"><path d="M0 0h256v256H0V0z" fill="#F7DF1E"/><path d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="80" style="padding-top: 10px;margin-left: 5px;" viewBox="0 0 256 256" preserveAspectRatio="xMinYMin meet"><path d="M0 0h256v256H0V0z" fill="#F7DF1E"/><path d="M67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371 7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259-19.245 0-30.416-9.967-36.087-21.996M152.381 211.354l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607 9.969 0 16.325-4.984 16.325-11.858 0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257 0-18.044 13.747-31.792 35.228-31.792 15.294 0 26.292 5.328 34.196 19.247L210.29 147.43c-4.125-7.389-8.591-10.31-15.465-10.31-7.046 0-11.514 4.468-11.514 10.31 0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804 0 21.654-17.012 33.51-39.867 33.51-22.339 0-36.774-10.654-43.819-24.574"/>
                     <h3>Java Script</h3>
                   </div>
                   <div class="description">
@@ -804,149 +809,177 @@
 
 
             </div>
-        </div>   
-
-    </section>
-    <section id="contactSection">
-      <div class="container">
-        <h3 style="text-align: center;  padding-bottom: 40px; font-size: 3.313rem; color: #ffffff;">Get in touch!</h3>
+            <h3 style="text-align: center; margin-top: 200px; padding-bottom: 40px; font-size: 3.313rem; color: #ffffff;" id="contact">Get in touch!</h3>
         <form>
-          <div class="row mb-4">
-<div class="col">
-<div data-mdb-input-init class="form-outline">
-  <input placeholder="First Name" type="text" id="form6Example1" class="form-control forminput" required/>
-</div>
-</div>
-<div class="col">
-<div data-mdb-input-init class="form-outline">
-  <input placeholder="Last Name" type="text" id="form6Example2" class="form-control forminput" required/>
-</div>
-</div>
-          </div>
-          <div class="row mb-4">
-            <div class="col">
-              <div data-mdb-input-init class="form-outline">
-                <input placeholder="Email Address" type="email" id="form6Example5" class="form-control forminput" required/>
-              </div>
-            </div>
-            <div class="col">
-              <div data-mdb-input-init class="form-outline">
-                <input placeholder="Contact Number" type="phone" id="form6Example6" class="form-control forminput" required/>
-              </div>
-            </div>
-          </div>
-          <div data-mdb-input-init class="form-outline mb-4">
-            <textarea placeholder="Type you message"  class="form-control forminput" id="form6Example7" rows="6"></textarea>
-          </div>
-          <!-- Checkbox -->
-          <div class="form-check mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" />
-            <label class="form-check-label" for="form6Example8" style="color: #fff;"> I have read and agreed with the terms and conditions. </label>
-          </div>
-          <div class="row mb-4">
-            <div class="col">
-              <div data-mdb-input-init class="form-outline">
-                <div style="color:#fff;"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg" width="20px;" /> REQUIRED FIELDS</div>
-              </div>
-            </div>
-            <div class="col" style="display: contents;">
-              <div data-mdb-input-init class="form-outline">
-                <button data-mdb-ripple-init type="submit" style="width: 200px; background: #242424; border: 1px solid #242424; padding:10px;" class="btn btn-primary btn-block mb-4">Submit</button>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <section class="Copyright">
-
- <div class="container">
-  <div class="row ">
+  <div class="row mb-4">
     <div class="col">
       <div data-mdb-input-init class="form-outline">
-        <div style="color:#fff; font-size: 20px;">Copyright © 2024 TheWebPulse</div>
+        <input placeholder="First Name" type="text" id="form6Example1" class="form-control forminput" required/>
+      </div>
+    </div>
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <input placeholder="Last Name" type="text" id="form6Example2" class="form-control forminput" required/>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-4">
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <input placeholder="Email Address" type="email" id="form6Example5" class="form-control forminput" required/>
+      </div>
+    </div>
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <input placeholder="Contact Number" type="phone" id="form6Example6" class="form-control forminput" required/>
+      </div>
+    </div>
+  </div>
+
+  <div data-mdb-input-init class="form-outline mb-4">
+    <textarea placeholder="Type you message"  class="form-control forminput" id="form6Example7" rows="6"></textarea>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" />
+    <label class="form-check-label" for="form6Example8" style="color: #fff;"> I have read and agreed with the terms and conditions. </label>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <div class="footerend" style="color:#fff;"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg" width="20px;" /> REQUIRED FIELDS</div>
+      </div>
+    </div>
+    <div class="col" style="display: contents;">
+      <div data-mdb-input-init class="form-outline">
+        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4 btnsubmit">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
+        </div>
+
+    </section>
+ <div class="container">
+  <div class="row mb-4">
+    <div class="col">
+      <div data-mdb-input-init class="form-outline">
+        <div class="footerend">Copyright © 2024 TheWebPulse</div>
       </div>
     </div>
     <div class="col" style="display: contents;">
       <div data-mdb-input-init class="form-outline">
         <!-- Facebook -->
-<a style="color: #3b5998; padding:0px 10px;" href="#!" role="button"
+<a class="iconend" style="color: #3b5998;" href="#!" role="button"
   ><i class="fa fa-facebook-f fa-lg"></i
 ></a>
 
 <!-- Twitter -->
-<a style="color: #55acee; padding:0px 10px;" href="#!" role="button"
+<a class="iconend" style="color: #55acee;" href="#!" role="button"
   ><i class="fa fa-twitter fa-lg"></i
 ></a>
 
 <!-- Google -->
-<a style="color: #dd4b39; padding:0px 10px;" href="#!" role="button"
+<a class="iconend" style="color: #dd4b39;" href="#!" role="button"
   ><i class="fa fa-google fa-lg"></i
 ></a>
 
 <!-- Instagram -->
-<a style="color: #ac2bac; padding:0px 10px;" href="#!" role="button"
+<a class="iconend" style="color: #ac2bac;" href="#!" role="button"
   ><i class="fa fa-instagram fa-lg"></i
 ></a>
       </div>
     </div>
   </div>
-</div>     
-    </section>
+</div>        
+
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap JS (including Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        // Initialize Swiper
-        var swiper = new Swiper('.m-slider.swiper-container', {
-          slidesPerView: '3', // Show as many slides as possible according to container's width
-          pagination: '.swiper-pagination', // Set pagination container
-          paginationClickable: false, // Enable pagination clickable
-          nextButton: '.swiper-button-next', // Set next button
-          prevButton: '.swiper-button-prev', // Set previous button
-          breakpoints: {
-            // Breakpoints for different screen sizes
+    // Initialize Swiper
+    var swiper = new Swiper('.m-slider.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        breakpoints: {
+            576: {
+                slidesPerView: 1
+            },
             768: {
-              slidesPerView: 1 // Show only one slide in mobile view (when screen width is less than 768px)
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
             }
-          }
-        });
-      });
+        }
+    });
+});
+
     </script>
-    
     <script>
       const multipleItemCarousel = document.querySelector("#testimonialCarousel");
-      if (window.matchMedia("(min-width:576px)").matches) {
-        const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-          interval: false
-        });
-        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-        var cardWidth = $(".carousel-item").width();
-        var scrollPosition = 0;
-        $(".carousel-control-next").on("click", function() {
-          if (scrollPosition < carouselWidth - cardWidth * 3) {
-            console.log("next");
-            scrollPosition = scrollPosition + cardWidth;
-            $(".carousel-inner").animate({
-              scrollLeft: scrollPosition
-            }, 800);
-          }
-        });
-        $(".carousel-control-prev").on("click", function() {
-          if (scrollPosition > 0) {
-            scrollPosition = scrollPosition - cardWidth;
-            $(".carousel-inner").animate({
-              scrollLeft: scrollPosition
-            }, 800);
-          }
-        });
-      } else {
-        $(multipleItemCarousel).addClass("slide");
-      }
+if (window.matchMedia("(min-width:576px)").matches) {
+  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+    interval: false
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+  function nextSlide() {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      console.log("next");
+      scrollPosition = scrollPosition + cardWidth;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 800);
+    }
+  }
+  function prevSlide() {
+    if (scrollPosition > 0) {
+      scrollPosition = scrollPosition - cardWidth;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 800);
+    }
+  }
+  $(".carousel-control-next").on("click", nextSlide);
+  $(".carousel-control-prev").on("click", prevSlide);
+  setInterval(nextSlide, 3000);
+} else {
+  $(multipleItemCarousel).addClass("slide");
+}
     </script>
+   
+<script>
+$(document).ready(function() {
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  }
+
+  if (isMobileDevice()) {
+    $('.card.dual').on('click', function() {
+      var card = $(this);
+      var description = card.find('.description');
+      description.toggleClass('active');
+      $('.card.dual .description').not(description).removeClass('active');
+      card.toggleClass('clicked');
+    });
+  }
+});
+</script>
+<script>
+$(document).on('click', function () {
+    $('#navbarNavDropdown').collapse('hide');
+});
+</script>
   </body>
 </html>
