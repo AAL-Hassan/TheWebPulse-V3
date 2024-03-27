@@ -217,8 +217,8 @@ video{
   opacity: 0.6;
 }
 .web1 {
-  background: #36454F ;
-    border: 1px solid #36454F;
+  background: #222 ;
+    border: 1px solid #222;
     padding: 30px;
     border-radius: 8px;
     display: flex;
@@ -252,7 +252,7 @@ button.carousel-control-next{
   right: -50px;
 }
 .card-body{
-  background: #36454F ;
+  background: #222 ;
   border: 1px solid white;
   border-radius: 10px;
 }
@@ -639,7 +639,7 @@ button.carousel-control-next{
 .carousel-control-next {
   width: 3rem;
   height: 3rem;
-  background-color: #36454F ;
+  background-color: #222 ;
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
@@ -686,7 +686,7 @@ button.carousel-control-next{
   padding: 30px;
   width: 100%;
   border-radius: 10px;
-  background-color: #36454F;
+  background-color: #222;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   transition-duration: 0.3s;
   transition-property: box-shadow;
@@ -789,7 +789,7 @@ border: 2px solid navy;
 
 
 .card.dual{
-  background: #36454F ;
+  background: cadetblue ;
 
 }
 
@@ -936,6 +936,9 @@ video{
 }
   .my-form{
   padding: 0px 20px;
+}
+#services h2{
+  text-align: center;
 }
 .form-check-label{
   font-size: 12px;
