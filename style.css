@@ -162,11 +162,11 @@ video{
 .skillsSection{
   padding: 100px 0px 100px 0;
 }
-.skillsSection h3{
-  color: #000000;
-  text-align: left;
-  font-size: 2rem;
-  font-weight: bold;
+.skillsSection h3 {
+    color: #000;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 #testimonialCarousel{
@@ -253,7 +253,7 @@ button.carousel-control-next{
 }
 .card-body{
   background: #222 ;
-  border: 1px solid white;
+/*  border: 1px solid white;*/
   border-radius: 10px;
 }
 .card{
@@ -691,7 +691,7 @@ button.carousel-control-next{
   transition-duration: 0.3s;
   transition-property: box-shadow;
   min-height: 350px;
-  border: 2px solid grey;
+/*  border: 2px solid grey;*/
   justify-content: center;
 }
 .m-card:hover {
@@ -789,19 +789,19 @@ border: 2px solid navy;
 
 
 .card.dual{
-  background: cadetblue ;
+  background: #373737 ;
 
 }
 
 .card.dual .header{
-  background: #cbf1fe;
+  background: #c5c6d0;
   border-radius: 10px 10px 120px 0px;
   padding: 30px;
 }
 .card.dual .description{
   clip-path: circle(20% at 100% 100%);
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
-  background: #cbf1fe;
+  background: #c5c6d0;
   height: 120px;
   transition: all ease-in-out .7s;
   border-bottom-right-radius: 10px;
@@ -1015,11 +1015,11 @@ video{
     display: none;
 }
 .card.dual.clicked {
-  background: cadetblue;
+  background: #373737;
 }
 
 .card.dual.clicked .header {
-  background: #cbf1fe;
+  background: #c5c6d0;
   border-radius: 10px 10px 120px 0px;
   padding: 30px;
 }
@@ -1030,7 +1030,7 @@ video{
 .card.dual.clicked .description {
   clip-path: circle(20% at 100% 100%);
   transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
-  background: #cbf1fe;
+  background: #c5c6d0;
   height: 120px;
   transition: all ease-in-out .7s;
   border-bottom-right-radius: 10px;
@@ -1047,6 +1047,16 @@ video{
 @media(min-width:425px) and (max-width:767px){
 .m-slider .m-slider__item {
     width: 385px !important;
+}
+}
+@media(min-width:500px) and (max-width:515px){
+.m-slider .m-slider__item {
+    width: 480px !important;
+}
+}
+@media(min-width:540px) and (max-width:767px){
+.m-slider .m-slider__item {
+    width: 515px !important;
 }
 }
 @media(min-width:768px) and (max-width:1024px){
@@ -1068,6 +1078,7 @@ video{
     margin-left: -36px;
     padding-left: 60px;
 }
+
 .serviceSection h2,
 .portfolioSection h3,
 .testimonialSection h3,
@@ -1151,6 +1162,9 @@ button.carousel-control-next {
 .card.dual:hover .description{
   height: 250px;
 }
+.m-slider .m-slider__item {
+    width: 330px !important;
+}
 }
 @media screen and (min-width: 1000px) and (max-width: 1024px){
 .welcome-text {
@@ -1161,6 +1175,9 @@ button.carousel-control-next {
     margin-top: -100px;
     margin-left: -44px;
     padding-left: 60px;
+}
+.m-slider .m-slider__item {
+    width: 290px !important;
 }
 }
 @media screen and (min-width: 1163px) and (max-width: 1280px){
@@ -1249,6 +1266,6 @@ button.carousel-control-next {
 }
 @media screen and (min-width: 5000px) {
 .swiper-button-prev.swiper-button-white {
-    right: 41%;
+    right: 43%;
 }
 }
