@@ -982,7 +982,12 @@ video{
   text-align: center;
 }
 .m-slider .m-slider__item {
-    width: 350px !important;
+       width: 97.5% !important;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px !important;
 }
 .m-card .m-card__body img {
     width: 50px;
