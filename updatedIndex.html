@@ -83,7 +83,7 @@
             <div class="swiper-button-next swiper-button-white"></div>
           </div>
         </div>
-        <div class="slider">
+        <div class="slider dslidercarousel">
           <div class="m-slider swiper-container">
             <div class="swiper-wrapper">
               <div class="m-slider__item swiper-slide">
@@ -164,9 +164,101 @@
           </div>
           <!-- .m-slider // -->
         </div>
+
+
+        <div id="customCarousel" class="carousel  mslidercarousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="m-card animate fadeInLeft one" ontouchstart>
+        <div class="m-card__body">
+          <img src="Resources/Images/Services/Ecommerce.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>E-Commerce</h3>
+                    <p>Sell your products and services online with our powerful ecommerce tools. Accept payments, manage orders, and track inventory.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/UX.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>E-UI/UX Design</h3>
+                    <p>We design beautiful and user-friendly websites that match your brand and vision. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/Wire%20frame.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>Wireframe and Prototyping</h3>
+                    <p>We create interactive prototypes that let you test and refine your website before launching it. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/Responsive.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>Responsive Design </h3>
+                    <p>We ensure that your website adapts to any screen size and device, from desktop to mobile. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/Revamp.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>Website Revamps</h3>
+                    <p>We can redesign your existing website and give it a fresh and modern look.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/SEO.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>SEO</h3>
+                    <p>We optimize your website for search engines and help you rank higher on Google and Bing. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/Database.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>Database Design </h3>
+                    <p>We design and maintain your website's database. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="m-card animate fadeInLeft one" ontouchstart>
+                  <div class="m-card__body">
+                    <img src="Resources/Images/Services/Troubleshoot.png" alt="img not showing" style="border-radius: 0%;">
+                    <h3>Troubleshooting</h3>
+                    <p>We maintain and fix any issues that may arise. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .swiper-wrapper // -->
+            <!-- Add Pagination -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev" style="margin-top: -195px; z-index: 999;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next" style="margin-top: -195px; z-index:999;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+</div>
+
+          </div>
+
         <!-- .slider // -->
       </div>
     </section>
+    
     <section class="portfolioSection" id="portfolio">
       <div class="container">
         <div class="row">
@@ -912,24 +1004,27 @@
         spaceBetween: 10,
         pagination: '.swiper-pagination',
         paginationClickable: true,
-                  loop: true, // Enable loop
-      
-
+        loop: true, // Enable loop
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        centeredSlides: false, // Default to false
         breakpoints: {
             576: {
                 slidesPerView: 1,
+                centeredSlides: true // Center slides in mobile view
             },
             768: {
-                slidesPerView: 2
+                slidesPerView: 2,
+                centeredSlides: false // Optionally, adjust as needed
             },
             992: {
-                slidesPerView: 3
+                slidesPerView: 3,
+                centeredSlides: false // Optionally, adjust as needed
             }
         }
     });
 });
+
 
     </script>
 <script>
@@ -999,9 +1094,53 @@ $(document).ready(function() {
 });
 </script>
 <script>
-$(document).on('click', function () {
-    $('#navbarNavDropdown').collapse('hide');
-});
+const multipleItemCarousel = document.querySelector("#customCarousel");
+if (window.matchMedia("(min-width:576px)").matches) {
+  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+    interval: false
+  });
+  var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  var cardWidth = $(".carousel-item").width();
+  var scrollPosition = 0;
+
+  function nextSlide() {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      console.log("next");
+      scrollPosition = scrollPosition + cardWidth;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 8000);
+    } else {
+      // If at the end of the carousel, scroll back to the beginning
+      scrollPosition = 0;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 8000);
+    }
+  }
+
+  function prevSlide() {
+    if (scrollPosition > 0) {
+      scrollPosition = scrollPosition - cardWidth;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 8000);
+    } else {
+      // If at the beginning of the carousel, scroll to the end
+      scrollPosition = carouselWidth - cardWidth * 3;
+      $(".carousel-inner").animate({
+        scrollLeft: scrollPosition
+      }, 8000);
+    }
+  }
+
+  $(".carousel-control-next").on("click", nextSlide);
+  $(".carousel-control-prev").on("click", prevSlide);
+} else {
+  $(multipleItemCarousel).addClass("slide");
+}
+
 </script>
+
   </body>
 </html>
