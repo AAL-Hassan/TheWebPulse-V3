@@ -78,7 +78,7 @@
           <div class="col-md-6">
             <h2 class="animate fadeInDown two">Our Services</h2>
           </div>
-          <div class="col-md-6 text-right">
+          <div class="col-md-6 text-right dsliderarrow">
             <div class="swiper-button-prev swiper-button-white"></div>
             <div class="swiper-button-next swiper-button-white"></div>
           </div>
@@ -167,9 +167,9 @@
 
 
         <div id="customCarousel" class="carousel  mslidercarousel" data-bs-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner ">
     <div class="carousel-item active">
-      <div class="m-card animate fadeInLeft one" ontouchstart>
+      <div class="m-card " ontouchstart>
         <div class="m-card__body">
           <img src="Resources/Images/Services/Ecommerce.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>E-Commerce</h3>
@@ -178,7 +178,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/UX.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>E-UI/UX Design</h3>
@@ -187,7 +187,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/Wire%20frame.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>Wireframe and Prototyping</h3>
@@ -196,7 +196,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/Responsive.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>Responsive Design </h3>
@@ -205,7 +205,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/Revamp.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>Website Revamps</h3>
@@ -214,7 +214,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/SEO.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>SEO</h3>
@@ -223,7 +223,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/Database.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>Database Design </h3>
@@ -232,7 +232,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="m-card animate fadeInLeft one" ontouchstart>
+                <div class="m-card " ontouchstart>
                   <div class="m-card__body">
                     <img src="Resources/Images/Services/Troubleshoot.png" alt="img not showing" style="border-radius: 0%;">
                     <h3>Troubleshooting</h3>
@@ -243,11 +243,11 @@
             </div>
             <!-- .swiper-wrapper // -->
             <!-- Add Pagination -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev" style="margin-top: -195px; z-index: 999;">
+            <button class="carousel-control-prev msliderarrow" type="button" data-bs-target="#customCarousel" data-bs-slide="prev" style="margin-top: -230px; z-index: 999;color: #fff; opacity: 1; background: transparent;">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next" style="margin-top: -195px; z-index:999;">
+          <button class="carousel-control-next msliderarrow" type="button" data-bs-target="#customCarousel" data-bs-slide="next" style="margin-top: -230px; z-index:999;color: #fff; opacity: 1; background: transparent;">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -1111,7 +1111,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
         scrollLeft: scrollPosition
       }, 8000);
     } else {
-      // If at the end of the carousel, scroll back to the beginning
       scrollPosition = 0;
       $(".carousel-inner").animate({
         scrollLeft: scrollPosition
@@ -1126,7 +1125,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
         scrollLeft: scrollPosition
       }, 8000);
     } else {
-      // If at the beginning of the carousel, scroll to the end
       scrollPosition = carouselWidth - cardWidth * 3;
       $(".carousel-inner").animate({
         scrollLeft: scrollPosition
