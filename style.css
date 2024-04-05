@@ -1058,13 +1058,14 @@ video{
 
 .card.dual.clicked .description {
   clip-path: circle(20% at 100% 100%);
+  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
   background: #c5c6d0;
   height: 120px;
+  transition: all ease-in-out .7s;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   color: transparent;
   padding: 0px 30px;
-  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
 }
 
 .serviceSection {
