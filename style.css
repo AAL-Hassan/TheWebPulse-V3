@@ -1076,7 +1076,7 @@ video{
     padding: 0px 0px 100px 0px;
 }
 .portfolioSection {
-    padding: 50px 0px 30px 0px;
+    padding: 50px 0px 30px 0px !important;
 }
 .web1 {
     margin: 20px 0;
