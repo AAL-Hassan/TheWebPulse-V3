@@ -1083,11 +1083,14 @@ $(document).ready(function() {
   }
 
   if (isMobileDevice()) {
-    $('.card.dual').on('click touchstart', function() {
+    $('.card.dual').on('click touchstart', function(event) {
       var card = $(this);
       var description = card.find('.description');
+      
+      $('.card.dual.clicked').not(card).removeClass('clicked');
+      $('.card.dual .description.active').not(description).removeClass('active');
+      
       description.toggleClass('active');
-      $('.card.dual .description').not(description).removeClass('active');
       card.toggleClass('clicked');
     });
   }
