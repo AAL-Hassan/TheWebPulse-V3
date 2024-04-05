@@ -808,7 +808,7 @@ border: 2px solid navy;
   border-bottom-left-radius: 10px;
   color: transparent;
   padding: 0px 30px;
-  transition: all ease-in-out 0.7s; /* Use a single transition property */
+  transition: all ease-in-out 0.1s;
 }
 
 .card.dual:hover .header,
