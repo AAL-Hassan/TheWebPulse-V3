@@ -1083,7 +1083,8 @@ $(document).ready(function() {
   }
 
   if (isMobileDevice()) {
-    $('.card.dual').on('click touchstart', function() {
+    $('.card.dual').on('click touchend', function(event) {
+      event.preventDefault();
       var card = $(this);
       var description = card.find('.description');
       description.toggleClass('active');
@@ -1092,6 +1093,7 @@ $(document).ready(function() {
     });
   }
 });
+
 </script>
 <script>
 const multipleItemCarousel = document.querySelector("#customCarousel");
