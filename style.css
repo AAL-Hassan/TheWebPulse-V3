@@ -1057,6 +1057,7 @@ video{
 }
 
 .card.dual.clicked .description {
+  clip-path: circle(20% at 100% 100%);
   background: #c5c6d0;
   height: 120px;
   border-bottom-right-radius: 10px;
