@@ -1051,8 +1051,7 @@ video{
   border-radius: 10px 10px 120px 0px;
   padding: 30px;
 }
-
-.card.dual.clicked .header h3 {
+.card.dual.clicked .header h3{
   color: #000;
 }
 
