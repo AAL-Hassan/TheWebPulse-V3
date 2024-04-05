@@ -1083,7 +1083,7 @@ $(document).ready(function() {
   }
 
   if (isMobileDevice()) {
-    $('.card.dual').on('click touchend', function(event) {
+    $('.card.dual').on('click touchstart', function(event) {
       event.preventDefault();
       var card = $(this);
       var description = card.find('.description');
