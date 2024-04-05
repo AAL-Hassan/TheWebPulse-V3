@@ -10,6 +10,7 @@
   }
  .bg-dark {
     background-color: transparent !important;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     max-width: 2500px;
 }
@@ -937,7 +938,7 @@ display: none ;
 }
 .mslidercarousel{
   display: block ;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
   button.carousel-control-prev {
@@ -1064,6 +1065,21 @@ video{
   border-bottom-left-radius: 10px;
   color: transparent;
   padding: 0px 30px;
+}
+.serviceSection {
+    padding: 0px 0px 50px 0;
+}
+#testimonialCarousel{
+  padding: 0px 0px 50px 0px;
+}
+.skillsSection {
+    padding: 50px 0px 100px 0;
+}
+.portfolioSection {
+    padding: 50px 0px 0px 0;
+}
+.web1 {
+    margin: 20px 0;
 }
 }
 @media(min-width:600px) and (max-width:766px){

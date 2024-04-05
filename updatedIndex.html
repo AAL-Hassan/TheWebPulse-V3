@@ -1083,7 +1083,7 @@ $(document).ready(function() {
   }
 
   if (isMobileDevice()) {
-    $('.card.dual').on('click', function() {
+    $('.card.dual').on('click touchstart', function() {
       var card = $(this);
       var description = card.find('.description');
       description.toggleClass('active');
