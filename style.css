@@ -790,42 +790,48 @@ border: 2px solid navy;
 }
 
 
-.card.dual{
-  background: #373737 ;
-
+.card.dual {
+  background: #373737;
 }
 
-.card.dual .header{
+.card.dual .header {
   background: #c5c6d0;
   border-radius: 10px 10px 120px 0px;
   padding: 30px;
 }
-.card.dual .description{
+
+.card.dual .description {
   clip-path: circle(20% at 100% 100%);
-  transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s;
   background: #c5c6d0;
   height: 120px;
-  transition: all ease-in-out .7s;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   color: transparent;
   padding: 0px 30px;
+  transition: all ease-in-out 0.7s; /* Use a single transition property */
 }
-.card.dual:hover .header{
+
+.card.dual:hover .header,
+.card.dual.clicked .header {
   clip-path: circle(100% at 50% 50%);
   background: navy;
   border-radius: 10px 10px 0px 0px;
 }
-.card.dual:hover .header h3{
+
+.card.dual:hover .header h3,
+.card.dual.clicked .header h3 {
   color: #fff;
 }
-.card.dual:hover .description{
+
+.card.dual:hover .description,
+.card.dual.clicked .description {
   clip-path: circle(100% at 50% 50%);
   background: navy;
   height: 280px;
   color: white;
 }
-.card.dual:hover .iconhover path{
+.card.dual:hover .iconhover path,
+.card.dual.clicked .iconhover path{
     fill: #fff;
 }
 .my-form{
@@ -1042,7 +1048,7 @@ video{
 .webdesktopimage{
     display: none;
 }
-.card.dual.clicked {
+/*.card.dual.clicked {
   background: #373737;
 }
 
@@ -1065,7 +1071,7 @@ video{
   border-bottom-left-radius: 10px;
   color: transparent;
   padding: 0px 30px;
-}
+}*/
 .serviceSection {
     padding: 0px 0px 50px 0px;
 }
