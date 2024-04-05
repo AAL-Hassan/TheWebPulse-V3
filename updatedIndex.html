@@ -1082,22 +1082,16 @@ $(document).ready(function() {
     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
   }
 
-  $('.card.dual').on(isMobileDevice() ? 'click touchstart' : 'mouseenter mouseleave', function(event) {
-    var card = $(this);
-    var description = card.find('.description');
-    
-    var isActive = card.hasClass('clicked');
-
-    $('.card.dual.clicked').not(card).removeClass('clicked');
-    $('.card.dual .description.active').removeClass('active');
-
-    if (!isActive) {
-      description.addClass('active');
-      card.addClass('clicked');
-    }
-  });
+  if (isMobileDevice()) {
+    $('.card.dual').on('click touchstart', function() {
+      var card = $(this);
+      var description = card.find('.description');
+      description.toggleClass('active');
+      $('.card.dual .description').not(description).removeClass('active');
+      card.toggleClass('clicked');
+    });
+  }
 });
-
 </script>
 <script>
 const multipleItemCarousel = document.querySelector("#customCarousel");
